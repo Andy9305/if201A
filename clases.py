@@ -79,3 +79,21 @@ class Persona_parametrizada:
     def __str__(self):
         return "Persona_parametrizada" "(nombre:{}, peso:{})".format(self.nombre, self.peso)
 
+'''
+Clase Empleado
+atributos: nombre, edad, profesión
+fecha: 05/09/24
+'''
+class empleado:
+    def __init__(self, nombre=None, edad=None, profesión=None):
+        self.nombre =""
+        self.edad =0
+        self.profesión ="Desconocida"
+        if nombre:
+            self.nombre=nombre
+        if edad:
+            self.edad= edad
+        if profesión:
+            self.profesión=profesión
+    def __str__(self):
+        return'Empleado(nombre:{}, edad{}, profesión{})'.format(self.nombre, self.edad, self.profesión)
