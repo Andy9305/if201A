@@ -47,3 +47,35 @@ class Atleta(Persona):
     
     def __str__(self): # Permite obtener una cadena con todos los valores
         return 'Atleta (nombre={}, peso={}, estatura={})'.format(self.nombre, self.peso, self.estatura)
+
+"""
+Clase: Persona_parametrizada
+Objetivo: usar parametros en metodos y constructor para sobrecarga
+Fecha: 05/09/24
+"""    
+class Persona_parametrizada:
+    # Definir  el constructor
+    def __init__(self, nombre= None, peso= None):
+        if nombre:
+            self.nombre= nombre
+        else:
+            self.nombre="Desconocido"
+        if peso:
+            self.peso= peso 
+        else:
+            self.peso=0
+
+    def caminar(self, distancia= None, lugar="Ciudad"):
+        if distancia is not None:
+            self.peso-=distancia/8
+        else:
+            self.peso -= 0.5
+        match (lugar):
+            case "Campo":
+                self.peso-=0.1
+            case "Ciudad":
+                pass
+
+    def __str__(self):
+        return "Persona_parametrizada" "(nombre:{}, peso:{})".format(self.nombre, self.peso)
+
