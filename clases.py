@@ -26,9 +26,7 @@ class Persona:
     def comer(self):
         self.peso +=1
     def __str__(self):
-        return 'Persona (nombre={}, peso={})'.format(
-            self.nombre, self.peso
-        )
+        return 'Persona (nombre={}, peso={})'.format(self.nombre, self.peso)
 
 """
 Nueva clase: Atleta
@@ -48,6 +46,4 @@ class Atleta(Persona):
         return self.peso / (self.estatura * self.estatura)
     
     def __str__(self): # Permite obtener una cadena con todos los valores
-        return 'Atleta (nombre={}, peso={}, estatura={})'.format(
-            self.nombre, self.peso, self.estatura
-        )
+        return 'Atleta (nombre={}, peso={}, estatura={})'.format(self.nombre, self.peso, self.estatura)
