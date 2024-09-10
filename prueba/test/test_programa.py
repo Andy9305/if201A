@@ -16,7 +16,7 @@ class Testprograma(unittest.TestCase):
     def test_suma_dentro_de_un_rango(self):
         self.assertIn(suma(2,5),[1, 2, 4, 6, 7])
 # Desarrollar pruebas para la funcion "es_mayor"
-    def test_verifixa_si_es_mayor(self):
+    def test_verifica_si_es_mayor(self):
         self.assertTrue(es_mayor(10,5))
     def test_verifica_que_no_es_mayor(self):
         self.assertFalse(es_mayor(2,8))
