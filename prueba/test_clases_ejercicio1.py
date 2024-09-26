@@ -9,8 +9,8 @@ class TestEmpleado(unittest.TestCase):
         emp= Empleado('Maria', 25, 2000)
         self.assertEqual(emp.calcular_bono(), 200)    
     def test_propiedades_gerente(self):
-        ger=Gerente('Pedro',35,5000, 'ventas')
-        self.assertEqual(ger.__str__(),'Gerente=> nombre: Pedro, edad:35,salario:5000, departamento:ventas')
+        ger=Gerente('Pedro', 35, 5000, 'ventas')
+        self.assertEqual(ger.__str__(),'Gerente=> nombre: Pedro, edad:35, salario:5000, departamento:ventas')
     def test_bono_gerente(self):
         ger=Gerente('Pedro',35,5000, 'ventas')
         self.assertEqual(ger.calcular_bono(), 1000)
